@@ -32,9 +32,10 @@ class MyApp extends StatelessWidget {
             ),
       ),
       home: const CategoriesScreen(),
-      routes:{ 
-        '/categories-meals': (ctx) => const CategoriesMealsScreen(),
-        } ,
+      routes: {
+        '/categories-meals': (ctx) =>
+            const CategoriesMealsScreen(), // configuração de Rota para a tela 'CategoriesMealsScreen'
+      },
     );
   }
 }

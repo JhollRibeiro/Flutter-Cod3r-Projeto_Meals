@@ -6,6 +6,11 @@ class CategoriesMealsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    // parametro passado via contexto através da Rota. Ou seja,
+    // quando eu criei a rota lá na 'main.dart' apontando esta classe e a chamei lá
+    // na 'categories_item.dart' passando como argumento do 'ModalRoute.of(context)?.settings.arguments'
+    // o objeto 'category' daquela proria classe, esse mesmo objeto é obtido aqui.
     final category = ModalRoute.of(context)?.settings.arguments as Category;
 
     return Scaffold(

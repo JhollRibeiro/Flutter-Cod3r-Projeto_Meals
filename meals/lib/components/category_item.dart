@@ -10,6 +10,8 @@ class CategoryItem extends StatelessWidget {
   });
 
   void _selectcategory(BuildContext context) {
+    // Chamando a Rota nomeada para a tela 'CategoriesMealsScreen'.
+    // OBS: A configuração da Rota é feita na 'main.dart'
     Navigator.of(context).pushNamed('/categories-meals', arguments: category,);
   }
 
