@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meals/models/category.dart';
+import 'package:meals/utils/app_routes.dart';
 
 class CategoryItem extends StatelessWidget {
   final Category category;
@@ -12,7 +13,7 @@ class CategoryItem extends StatelessWidget {
   void _selectcategory(BuildContext context) {
     // Chamando a Rota nomeada para a tela 'CategoriesMealsScreen'.
     // OBS: A configuração da Rota é feita na 'main.dart'
-    Navigator.of(context).pushNamed('/categories-meals', arguments: category,);
+    Navigator.of(context).pushNamed(AppRoutes.CATEGORIES_MEALS, arguments: category,);
   }
 
   @override
