@@ -8,8 +8,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = ThemeData(      
-      canvasColor: const Color.fromRGBO(255, 254, 229, 1)
+    final ThemeData theme = ThemeData(
+      canvasColor: const Color.fromRGBO(255, 254, 229, 1),
     );
 
     return MaterialApp(
@@ -20,15 +20,15 @@ class MyApp extends StatelessWidget {
           secondary: Colors.amber,
         ),
         textTheme: ThemeData.light().textTheme.copyWith(
-          titleLarge: const TextStyle(
-            fontFamily: 'Raleway',
-          ),
-          titleMedium: const TextStyle(
-            fontFamily: 'RobotoCondensed',
-            color: Colors.black,
-            fontSize: 20,
-          ),
-        )
+              titleLarge: const TextStyle(
+                fontFamily: 'Raleway',
+              ),
+              titleMedium: const TextStyle(
+                fontFamily: 'RobotoCondensed',
+                color: Colors.black,
+                fontSize: 20,
+              ),
+            ),
       ),
       home: const CategoriesScreen(),
     );
